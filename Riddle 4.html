@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riddle 4</title>
+<script>
+function checkAnswer(){
+let answer=document.getElementById("answer").value.toLowerCase();
+if(answer==="footsteps"){
+window.location.href="riddle5.html";
+}else{
+alert("Wrong answer! Try again.");
+}
+}
+</script>
+</head>
+<body style="text-align:center;padding:40px;font-family:Arial;">
+<h2>Riddle 4</h2>
+<p>The more you take, the more you leave behind. What are they?</p>
+<input type="text" id="answer">
+<br><br>
+<button onclick="checkAnswer()">Submit</button>
+</body>
+</html>
