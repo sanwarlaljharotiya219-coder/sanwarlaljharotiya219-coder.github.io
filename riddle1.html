@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riddle 1</title>
+<style>
+body{font-family:Arial;text-align:center;background:#e8f0fe;padding:40px;}
+.container{background:white;padding:30px;border-radius:10px;max-width:500px;margin:auto;}
+input{padding:8px;width:80%;}
+button{padding:8px 15px;margin-top:10px;}
+</style>
+<script>
+function checkAnswer(){
+let answer=document.getElementById("answer").value.toLowerCase();
+if(answer==="echo"){
+window.location.href="riddle2.html";
+}else{
+alert("Wrong answer! Try again.");
+}
+}
+</script>
+</head>
+<body>
+<div class="container">
+<h2>Riddle 1</h2>
+<p>I speak without a mouth and hear without ears. What am I?</p>
+<input type="text" id="answer">
+<br>
+<button onclick="checkAnswer()">Submit</button>
+</div>
+</body>
+</html>
