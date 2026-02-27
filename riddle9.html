@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Final Riddle</title>
+<script>
+function checkAnswer(){
+let answer=document.getElementById("answer").value.toLowerCase();
+if(answer==="time"){
+alert("Congratulations! You completed all 9 riddles!");
+window.location.href="index.html";
+}else{
+alert("Wrong answer! Try again.");
+}
+}
+</script>
+</head>
+<body style="text-align:center;padding:40px;font-family:Arial;">
+<h2>Final Riddle</h2>
+<p>What flies without wings, cries without eyes, and heals without hands?</p>
+<input type="text" id="answer">
+<br><br>
+<button onclick="checkAnswer()">Submit</button>
+</body>
+</html>
